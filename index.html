@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red Fort</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #bbdefb);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #0d47a1;
+        }
+
+        header {
+            background-color: #1565c0;
+            color: #ffffff;
+            padding: 20px;
+            border-bottom: 3px solid #0d47a1;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        img {
+            width: 380px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+            border: 3px solid #1565c0;
+        }
+
+        /* NEW background section */
+        .info-section {
+            background: url('radfort.jpg') no-repeat center;
+            background-size: cover;
+            position: relative;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* overlay to make image less visible */
+        .info-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* fade effect */
+            z-index: 1;
+        }
+
+        .info-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        h2 {
+            color: #0d47a1;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: square;
+            text-align: left;
+            max-width: 450px;
+            margin: 20px auto;
+            font-size: 18px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        /* Button style */
+        .btn {
+            background-color: #1565c0;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #0d47a1;
+        }
+
+        footer {
+            background-color: #1565c0;
+            color: #ffffff;
+            padding: 15px;
+            margin-top: 20px;
+            border-top: 3px solid #0d47a1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Red Fort</h1>
+</header>
+
+<div class="container">
+
+    <img src="radfort.jpg" alt="Red Fort">
+
+    <!-- NEW SECTION WITH BACKGROUND IMAGE -->
+    <div class="info-section">
+        <div class="info-content">
+
+            <h2>About Red Fort</h2>
+
+            <p>
+                The Red Fort is a historic fort in India that served as the residence of Mughal emperors. It is famous for its strong red sandstone walls and grand design.
+            </p>
+
+            <p>
+                It is located in Delhi and was built by Emperor Shah Jahan in 1648. The fort became the political and cultural center of the Mughal Empire.
+            </p>
+
+            <p>
+                The Red Fort is an important symbol of India’s heritage. Every year on Independence Day, the national flag is hoisted here.
+            </p>
+
+            <p>
+                It is also a UNESCO World Heritage Site and attracts many visitors from across the world.
+            </p>
+
+            <h2>Interesting Facts</h2>
+
+            <ul>
+                <li>The fort is made using red sandstone.</li>
+                <li>It took about 10 years to complete.</li>
+                <li>It was once home to Mughal emperors.</li>
+                <li>Independence Day celebrations happen here every year.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- THANK YOU MESSAGE + BUTTON -->
+    <h2>Thank You for Visiting the Webpage!</h2>
+
+    <button class="btn" onclick="window.open('https://en.wikipedia.org/wiki/Red_Fort', '_blank')">
+        Know More
+    </button>
+
+</div>
+
+<footer>
+   Red Fort | Webpage
+</footer>
+
+</body>
+</html>
